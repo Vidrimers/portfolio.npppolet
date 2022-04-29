@@ -1,0 +1,103 @@
+.header {
+  padding-top: 1rem;
+  // margin-bottom: 12rem;
+
+  &__logo {
+    max-width: 26rem;
+  }
+
+  &__inner {
+    margin: 0 1rem;
+  }
+
+  &__main {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    // margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  &__lang {
+    display: flex;
+    // margin-left: auto;
+  }
+
+  &__title {
+    max-width: 59rem;
+    text-transform: uppercase;
+    color: $color2;
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    span {
+      text-transform: none;
+      color: $color2;
+      font-size: 1.6rem;
+      font-weight: 40;
+    }
+  }
+
+  &__btn {
+    // color: #fff;
+    // margin-left: 6rem;
+    // font-weight: 600;
+    // font-size: 2rem;
+    // line-height: 3rem;
+    // padding: 11px 43px;
+    // border-radius: 5rem;
+  }
+
+  &__form {
+    position: relative;
+    // display: inline-block;
+
+    &-search {
+      // color:
+      width: 14rem;
+      width: 18rem;
+      background: red;
+      height: 2rem;
+      background: #000;
+      padding-left: .5rem;
+      padding-right: 2rem;
+
+      -webkit-box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.59);
+      box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.59);
+
+      &::placeholder {}
+    }
+
+    &-btn {
+      position: absolute;
+      right: 0;
+      width: 2rem;
+    }
+  }
+
+  svg path {
+    fill: transparent;
+    fill: none;
+  }
+}
+
+
+
+
+.menu {
+  // margin-left: auto;
+
+  &__list {
+    display: flex;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
