@@ -1,6 +1,6 @@
 .header {
   padding-top: 1rem;
-  // margin-bottom: 12rem;
+  margin-bottom: 3rem;
 
   &__logo {
     max-width: 26rem;
@@ -94,7 +94,6 @@
 
 
 .menu {
-
   &__list {
     display: flex;
     justify-content: center;
@@ -107,6 +106,9 @@
       border-bottom: 1px solid $color2;
       // transition: all .3s;
 
+      &:last-child ul {
+        width: 100%;
+      }
 
       &:last-child ul>li {
         width: 100%;
@@ -137,6 +139,8 @@
 
       transition: all .3s;
 
+      
+
       &:hover {
         color: $color4;
         background: $color2;
@@ -147,14 +151,13 @@
 
 
   &__sublist {
+    z-index: 10;
     display: none;
     position: absolute;
-    border-top: 1px solid $color2;
     left: 0;
     top: 100%;
-    width: 100%;
-
-
+    // width: 100%;
+    border: 1px solid $color2;
 
     &-item {
       width: 40rem;
@@ -163,6 +166,7 @@
       // border-bottom: 1px solid $color2;
 
       transition: all .3s;
+
 
       &:hover {
         // background: #00335c;
@@ -179,7 +183,7 @@
       text-align: left;
       // border-bottom: 1px solid $color2;
 
-      // width: 100%;
+      width: 100%;
       &:hover {
         color: $color4;
 

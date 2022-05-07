@@ -24,3 +24,12 @@ a {
   padding: 0 1rem;
   margin: 0 auto;
 }
+
+.columns{
+  &__inner {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}

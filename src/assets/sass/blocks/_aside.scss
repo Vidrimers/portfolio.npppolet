@@ -1,0 +1,80 @@
+.aside {
+  width: 30rem;
+  text-align: center;
+
+  &__menu {
+    border: 1px solid $color2;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    &-title {
+      background: $color2;
+      padding: 0.5rem 0;
+      font-size: 1.6rem;
+      color: $color4;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      // text-align: center;
+
+    }
+
+    &-item {
+      position: relative;
+      width: 100%;
+      margin-bottom: 1rem;
+      // text-align: center;
+
+      &:hover .aside__sublist {
+        display: block;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: 0.5rem 0;
+      font-size: 1.4rem;
+      color: $color1;
+
+      transition: color .3s;
+
+      &:hover {
+        color: $color2;
+      }
+      
+
+    }
+  }
+
+  &__sublist {
+    display: none; 
+    // position: absolute;
+    // left: 0;
+    // top: 100%;
+    // width: 100%;
+    // text-align: center;
+    // width: 28rem;
+    
+    // transition: all .3s;
+    
+    &-item{
+    transition: all .3s;
+
+    }
+
+    &-link {
+    }
+
+    &-img {
+
+      // width: 100%;
+      // text-align: center;
+      // display: block;
+    }
+
+    &:hover {
+      
+      // display: block;
+    }
+  }
+}

@@ -6044,15 +6044,15 @@ $(function () {
   
   console.log("this is slick component");
   
-  let work__items = $(".work__items");
+  let main__preview = $(".main__preview");
   
-  work__items.slick({
+  main__preview.slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
+    slidesToScroll: 3,
+    autoplay: true,
     speed: 800,
     adaptiveHeight: false,
     // centerMode: true,
@@ -6068,15 +6068,4 @@ $(function () {
         },
       ]
   })
-  
-  $(".work__arrow-left").on("click", function (event) {
-    event.preventDefault();
-  
-    work__items.slick('slickPrev');
-  });
-  $(".work__arrow-right").on("click", function (event) {
-    event.preventDefault();
-  
-    work__items.slick('slickNext');
-  });
 })
