@@ -335,13 +335,13 @@ a {
 }
 
 .aside {
-    width: 30rem;
+    width: 25rem;
     text-align: center;
 }
 
 .aside__menu {
     border: 1px solid #005DAB;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .aside__list-title {
