@@ -1,3 +1,31 @@
-.about{
-  
+.about {
+  max-width: 75rem;
+  width: 100%;
+  // padding-left: 27rem;
+
+  &__inner {}
+
+  &__title {}
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    ul {
+      padding-left: 6rem;
+    }
+
+    ul li {
+      list-style: disc;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+iframe{
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 3rem;
 }

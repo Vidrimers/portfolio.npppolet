@@ -14,7 +14,7 @@ const include = require("gulp-file-include");
 const htmlmin = require("gulp-htmlmin");
 const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
-const uglify = require("gulp-uglify");
+// const uglify = require("gulp-uglify");
 const sourcemaps = require("gulp-sourcemaps");
 const plumber = require("gulp-plumber");
 
@@ -147,7 +147,7 @@ function js() {
     .pipe(plumber())
     .pipe(rigger())
     .pipe(gulp.dest(path.build.js))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(rename({
       suffix: ".min",
       extname: ".js"

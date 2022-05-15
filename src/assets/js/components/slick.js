@@ -1,9 +1,9 @@
 //= ../../../../node_modules/slick-carousel/slick/slick.js
 // https://github.com/kenwheeler/slick/
 
-console.log("this is slick component");
+console.log("this is slick component")
 
-let main__preview = $(".main__preview");
+let main__preview = $(".main__preview")
 
 main__preview.slick({
   dots: false,
