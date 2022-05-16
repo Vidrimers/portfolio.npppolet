@@ -8,6 +8,29 @@ body {
 
 .page {
   position: relative;
+
+  &__global {
+    max-width: 75rem;
+    width: 100%;
+    // padding-left: 27rem;
+  }
+
+  &__title {
+    // margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color2;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    color: $color2;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
 }
 
 .btn {
@@ -35,33 +58,18 @@ a {
   }
 }
 
-.page__title {
-  // margin-bottom: 1rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: $color2;
-}
-.page__subtitle{
-  font-weight: 700;
-  color: $color2;
-}
-.page__text{
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-}
-
 .breadcrumb {
   // margin-bottom: .5rem;
   padding: 1rem 0;
   color: rgba(37, 37, 37, .7);
-  
+
   &__item {
     display: inline;
     font-size: 1.1rem;
     font-weight: 400;
     // color: #ACACAC;
 
-    & + &::before{
+    &+&::before {
       content: '/\00a0';
       padding-left: 0.5rem;
       // padding: 0.8rem;
@@ -73,8 +81,8 @@ a {
     color: rgba(37, 37, 37, .7);
     transition: all .3s;
 
-    
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
       color: rgba(37, 37, 37, .9);
     }

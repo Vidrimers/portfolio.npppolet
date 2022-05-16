@@ -1,3 +1,22 @@
-p{
-  color: gray;
+.system {
+  &__inner {}
+
+  &__title {}
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    ul {
+      padding-left: 6rem;
+    }
+
+    ul li {
+      list-style: disc;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 }

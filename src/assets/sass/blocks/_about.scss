@@ -1,8 +1,4 @@
 .about {
-  max-width: 75rem;
-  width: 100%;
-  // padding-left: 27rem;
-
   &__inner {}
 
   &__title {}
@@ -27,5 +23,5 @@
 iframe{
   display: block;
   margin: 0 auto 2rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
 }
