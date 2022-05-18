@@ -24,9 +24,6 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const webphtml = require("gulp-webp-html");
 
-// fonts
-
-
 const del = require("del");
 const panini = require("panini");
 const browsersync = require("browser-sync").create();
@@ -108,6 +105,7 @@ function html() {
     // }))
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream());
+
 }
 
 function css() {
