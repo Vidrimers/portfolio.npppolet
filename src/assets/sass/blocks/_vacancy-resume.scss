@@ -10,18 +10,35 @@
     }
   }
   &__form{
+    display: flex;
+    flex-direction: column;
 
     &-text{
-      width: 50%;
-      max-width: 40rem;
+      // width: 100%;
+      // max-width: 50rem;
       padding: 1rem 1.5rem 1rem;
-      margin: 0 auto 1rem;
-      display: block;
+      // margin: 0 auto 1rem;
+      // display: block;
+      // color: $color1;
       border-bottom: 1px solid $color2;
-
+      text-align: center;
+      
       &::placeholder{
         text-align: center;
+
       }
+      &:focus{
+        background: rgba(0, 93, 171, .8);
+        color: $color4;
+
+        &::placeholder{
+          color: $color4;
+        }
+      }
+    }
+    label{
+      margin-top: 1rem;
+      border: 1px solid $color2;
     }
     &-btn{
       display: block;

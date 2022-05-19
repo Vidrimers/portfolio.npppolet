@@ -23,14 +23,20 @@
       <p class="page__text">
         Поля, помеченные <span class="required">*</span>, являются обязательными для заполнения.
       </p>
-      <form class="vacancy-resume__form">
-        <input class="vacancy-resume__form-text" type="text" placeholder="1. Интересующая вакансия">
-        <input class="vacancy-resume__form-text" type="text" placeholder="2. ФИО">
-        <input class="vacancy-resume__form-text" type="text" placeholder="3. Дата рождения">
-        <input class="vacancy-resume__form-text" type="text" placeholder="4. Гражданство">
-        <input class="vacancy-resume__form-text" type="text" placeholder="5. Место жительства">
-        <input class="vacancy-resume__form-text" type="text" placeholder="6. Телефоны">
-        <input class="vacancy-resume__form-text" type="text" placeholder="7. E-mail">
+      <form class="vacancy-resume__form" method="get">
+        <input class="vacancy-resume__form-text" type="text" placeholder="Интересующая вакансия">
+        <input class="vacancy-resume__form-text" type="text" required placeholder="ФИО">
+        <input class="vacancy-resume__form-text" type="date" required  placeholder="Дата рождения">
+        <input class="vacancy-resume__form-text" type="text" required  placeholder="Гражданство">
+        <input class="vacancy-resume__form-text" type="text" placeholder="Место жительства">
+        <input class="vacancy-resume__form-text" type="tel" required  placeholder="Телефон">
+        <input class="vacancy-resume__form-text" type="email" placeholder="E-mail">
+        <label for="">
+          Образование
+          <input type="text">
+          <input type="text">
+          <input type="text">
+      </label>
         <input class="vacancy-resume__form-btn" type="submit" value="Отправить анкету">
       </form>
 
