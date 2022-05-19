@@ -1,0 +1,45 @@
+.vacancy-resume{
+
+  &__link{
+    text-decoration: underline;
+    transition: all .3s ease;
+    
+    &:hover {
+      color: $color2;
+      text-decoration: underline;
+    }
+  }
+  &__form{
+
+    &-text{
+      width: 50%;
+      max-width: 40rem;
+      padding: 1rem 1.5rem 1rem;
+      margin: 0 auto 1rem;
+      display: block;
+      border-bottom: 1px solid $color2;
+
+      &::placeholder{
+        text-align: center;
+      }
+    }
+    &-btn{
+      display: block;
+      margin: 0 auto;
+      background: $color4;
+      padding: 1.5rem 1rem;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      text-align: center;
+      font-weight: 500;
+      color: $color2;
+      border: 1px solid $color2;
+      transition: all .3s;
+
+      &:hover {
+        color: $color4;
+        background: $color2;
+      }
+    }
+  }
+}

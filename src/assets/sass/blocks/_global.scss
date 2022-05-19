@@ -10,6 +10,7 @@ body {
   &__global {
     max-width: 75rem;
     width: 100%;
+    margin: 0 auto;
   }
 
   &__title {
@@ -44,6 +45,23 @@ a {
   margin: 0 auto;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  ul {
+    padding-left: 6rem;
+  }
+
+  ul li {
+    list-style: disc;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .columns {
   &__inner {
     position: relative;
@@ -73,11 +91,13 @@ a {
     transition: all .3s;
     text-decoration: underline;
 
-
     &:hover {
       text-decoration: underline;
       padding-bottom: 0.5rem;
       color: rgba(37, 37, 37, .9);
     }
   }
+}
+.required{
+  color:red;
 }

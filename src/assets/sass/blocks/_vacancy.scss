@@ -1,0 +1,12 @@
+.vacancy{
+
+  &__link{
+    text-decoration: underline;
+    transition: all .3s ease;
+    
+    &:hover {
+      color: $color2;
+      text-decoration: underline;
+    }
+  }
+}

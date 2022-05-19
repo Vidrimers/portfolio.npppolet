@@ -21,7 +21,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    // margin-bottom: 2rem;
     gap: 1rem;
   }
 
@@ -29,7 +28,6 @@
     display: flex;
     gap: .5rem;
     transform: translateY(25%);
-    // margin-left: auto;
   }
 
   &__title {
@@ -47,30 +45,14 @@
     }
   }
 
-  &__btn {
-    // color: #fff;
-    // margin-left: 6rem;
-    // font-weight: 600;
-    // font-size: 2rem;
-    // line-height: 3rem;
-    // padding: 11px 43px;
-    // border-radius: 5rem;
-  }
-
   &__form {
     position: relative;
-    // display: inline-block;
-    // border-top: 1px solid $color2;
     border-bottom: 1px solid $color2;
 
     &-search {
       width: 14rem;
-      // width: 18rem;
-      // height: 2rem;
       padding-left: .5rem;
       padding-right: 2rem;
-
-      // box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.59);
 
       &::placeholder {
         color: $color2;
@@ -97,14 +79,12 @@
   &__list {
     display: flex;
     justify-content: center;
-    // gap: 1rem;
 
     &-item {
       position: relative;
       width: 100%;
       border-top: 1px solid $color2;
       border-bottom: 1px solid $color2;
-      // transition: all .3s;
 
       &:last-child ul {
         width: 100%;
@@ -118,13 +98,9 @@
         width: 100%;
       }
 
-      &:first-child {}
-
       &:hover .menu__sublist {
         display: block;
       }
-
-      &:active {}
     }
 
     &-link {
@@ -156,23 +132,16 @@
     position: absolute;
     left: 0;
     top: 100%;
-    // width: 100%;
     border: 1px solid $color2;
 
     &-item {
       width: 40rem;
-      // width: 100%;
       background: $color4;
-      // border-bottom: 1px solid $color2;
-
       transition: all .3s;
 
-
       &:hover {
-        // background: #00335c;
         background: $color2;
       }
-
     }
 
     &-link {
@@ -181,9 +150,8 @@
       color: $color2;
       font-size: 1.3rem;
       text-align: left;
-      // border-bottom: 1px solid $color2;
-
       width: 100%;
+
       &:hover {
         color: $color4;
 

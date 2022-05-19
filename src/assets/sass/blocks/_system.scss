@@ -1,40 +1,7 @@
-.aside {
-  // display: none;
-}
-
-.system {
-  margin: 0 auto;
-
-  &__inner {}
-
-  &__title {}
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    ul {
-      padding-left: 6rem;
-    }
-
-    ul li {
-      list-style: disc;
-      font-size: 1.4rem;
-      line-height: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-  }
-}
-
 .certificates {
   display: flex;
-  // justify-content: flex-end;
-  // align-content: center;
-  // align-self: center;
   gap: 2rem;
   margin: 0 auto;
-  // width: 100%;
 
   &__img-box {
     transition: all .3s ease;
@@ -45,11 +12,8 @@
   }
 
   &__img {
-    // border: 1px solid $color2;
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, .2);
-
     width: 100%;
     height: 100%;
-
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, .2);
   }
 }
