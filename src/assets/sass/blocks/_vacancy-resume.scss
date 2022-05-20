@@ -1,46 +1,101 @@
-.vacancy-resume{
+.vacancy-resume {
 
-  &__link{
+  &__link {
     text-decoration: underline;
     transition: all .3s ease;
-    
+
     &:hover {
       color: $color2;
       text-decoration: underline;
     }
   }
-  &__form{
+
+  &__form {
     display: flex;
     flex-direction: column;
 
-    &-text{
+    &-item {
+      // display: none;
       // width: 100%;
       // max-width: 50rem;
       padding: 1rem 1.5rem 1rem;
       // margin: 0 auto 1rem;
+      margin-bottom: 1rem;
       // display: block;
       // color: $color1;
+      font-size: 1.4rem;
       border-bottom: 1px solid $color2;
       text-align: center;
-      
-      &::placeholder{
-        text-align: center;
 
+      &::placeholder {
+        font-size: 1.4rem;
+        text-align: center;
       }
-      &:focus{
+
+      &:focus {
         background: rgba(0, 93, 171, .8);
         color: $color4;
 
-        &::placeholder{
+        &::placeholder {
           color: $color4;
         }
       }
     }
-    label{
+
+    &-info {
+      display: flex;
       margin-top: 1rem;
-      border: 1px solid $color2;
+      // border: 1px solid $color2;
+      margin-bottom: 1rem;
+
+      input {
+        display: block;
+        width: 100%;
+        // border-left: 1px solid $color2;
+        border-bottom: 1px solid $color2;
+        padding: 0 .5rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+
+
+        &:focus {
+          background: rgba(0, 93, 171, .8);
+          color: $color4;
+        }
+      }
     }
-    &-btn{
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      // align-self: center;
+      // align-content: center;
+      // width: 100%;
+      gap: 0.5rem;
+      padding: 0.5rem;  
+
+      p{
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-bottom: auto;
+      }
+      
+      input{
+        align-items: baseline;
+      }
+    }
+    &-more{
+      text-align: center;
+      margin: 0 auto;
+
+      textarea{
+        border: 1px solid $color2;
+      }
+    }
+
+    &-btn {
       display: block;
       margin: 0 auto;
       background: $color4;

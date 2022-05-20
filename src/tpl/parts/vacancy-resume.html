@@ -24,19 +24,68 @@
         Поля, помеченные <span class="required">*</span>, являются обязательными для заполнения.
       </p>
       <form class="vacancy-resume__form" method="get">
-        <input class="vacancy-resume__form-text" type="text" placeholder="Интересующая вакансия">
-        <input class="vacancy-resume__form-text" type="text" required placeholder="ФИО">
-        <input class="vacancy-resume__form-text" type="date" required  placeholder="Дата рождения">
-        <input class="vacancy-resume__form-text" type="text" required  placeholder="Гражданство">
-        <input class="vacancy-resume__form-text" type="text" placeholder="Место жительства">
-        <input class="vacancy-resume__form-text" type="tel" required  placeholder="Телефон">
-        <input class="vacancy-resume__form-text" type="email" placeholder="E-mail">
-        <label for="">
-          Образование
-          <input type="text">
-          <input type="text">
-          <input type="text">
-      </label>
+        <input class="vacancy-resume__form-item" type="text" placeholder="Интересующая вакансия">
+        <input class="vacancy-resume__form-item" type="text" required placeholder="ФИО">
+        <input class="vacancy-resume__form-item" type="date" required placeholder="Дата рождения">
+        <input class="vacancy-resume__form-item" type="text" required placeholder="Гражданство">
+        <input class="vacancy-resume__form-item" type="text" placeholder="Место жительства">
+        <input class="vacancy-resume__form-item" type="tel" required placeholder="Телефон">
+        <input class="vacancy-resume__form-item" type="email" placeholder="E-mail">
+        <p class="page__text">Образование</p>
+        <div class="vacancy-resume__form-info">
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Начало обучения</p>
+            <input type="date">
+            <input type="date">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Окончание обучения</p>
+            <input type="date">
+            <input type="date">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Название учебного заведения</p>
+            <input type="text">
+            <input type="text">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Факультет</p>
+            <input type="text">
+            <input type="text">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Специальность</p>
+            <input type="text">
+            <input type="text">
+          </div>
+        </div>
+        <p class="page__text">Опыт работы</p>
+        <div class="vacancy-resume__form-info">
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Начало работы </p>
+            <input type="date">
+            <input type="date">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Окончание работы </p>
+            <input type="date">
+            <input type="date">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Название, адрес и телефоны организации </p>
+            <input type="text">
+            <input type="text">
+          </div>
+          <div class="vacancy-resume__form-block">
+            <p class="page__text">Должность</p>
+            <input type="text">
+            <input type="text">
+          </div>
+        </div>
+        <div class="vacancy-resume__form-more">
+          <p class="page__text">Дополнительная информация</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
         <input class="vacancy-resume__form-btn" type="submit" value="Отправить анкету">
       </form>
 
