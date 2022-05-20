@@ -24,8 +24,11 @@
       // display: block;
       // color: $color1;
       font-size: 1.4rem;
-      border-bottom: 1px solid $color2;
+      border: 1px solid $color4;
+        border-bottom: 1px solid $color2;
       text-align: center;
+transition: border .5s;
+
 
       &::placeholder {
         font-size: 1.4rem;
@@ -33,8 +36,9 @@
       }
 
       &:focus {
-        background: rgba(0, 93, 171, .8);
-        color: $color4;
+        // background: rgba(0, 93, 171, .8);
+        border: 1px solid $color2;
+        color: $color1;
 
         &::placeholder {
           color: $color4;
@@ -51,16 +55,18 @@
       input {
         display: block;
         width: 100%;
-        // border-left: 1px solid $color2;
+        border: 1px solid $color4;
         border-bottom: 1px solid $color2;
-        padding: 0 .5rem;
+        padding: .5rem;
         font-size: 1.4rem;
         margin-bottom: 0.5rem;
 
-
+transition: border .5s;
         &:focus {
-          background: rgba(0, 93, 171, .8);
-          color: $color4;
+          // background: rgba(0, 93, 171, .8);
+        border: 1px solid $color2;
+
+          color: $color1;
         }
       }
     }
@@ -89,9 +95,21 @@
     &-more{
       text-align: center;
       margin: 0 auto;
-
+      width: 100%;
       textarea{
+        border: 1px solid $color4;
+        border-bottom: 1px solid $color2;
+        width: 50%;
+        padding: 0.5rem;
+
+        transition: border .5s;
+
+        &:focus {
+          // background: rgba(0, 93, 171, .8);
         border: 1px solid $color2;
+
+          color: $color1;
+        }
       }
     }
 
