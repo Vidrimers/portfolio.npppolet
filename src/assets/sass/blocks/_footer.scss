@@ -37,5 +37,13 @@
     color: gray;
     font-size: 1.3rem;
     margin-top: .5rem;
+    a{
+      color: inherit;
+      transition: color .3s;
+
+    &:hover {
+      color: $color2;
+    }
+    }
   }
 }

@@ -1,4 +1,4 @@
-.vacancy-resume {
+.contacts-feedback {
 
   &__link {
     text-decoration: underline;
@@ -13,10 +13,6 @@
   &__form {
     display: flex;
     flex-direction: column;
-
-    &-warning {
-      font-size: 1.2rem;
-    }
 
     &-item {
       padding: 1rem 1.5rem 1rem;
@@ -65,19 +61,6 @@
       }
     }
 
-    &-block {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 0.5rem;
-
-      p {
-        font-size: 1.4rem;
-        line-height: 1;
-        margin-bottom: auto;
-      }
-    }
-
     &-more {
       text-align: center;
       margin: 0 auto;
@@ -92,9 +75,8 @@
         border-bottom: 1px solid $color2;
         border-top: 1px solid $color2;
         width: 50%;
-        height: 5rem;
+        height: 10rem;
         padding: 0.5rem;
-        // overflow: hidden;
         resize: none;
         transition: border .5s;
 
@@ -104,7 +86,6 @@
 
         &:focus {
           border: 1px solid $color2;
-
           color: $color1;
         }
       }
@@ -128,16 +109,5 @@
         background: $color2;
       }
     }
-  }
-}
-
-span.required {
-  border: 1px solid red;
-  padding: 0 0.3rem;
-}
-
-input.required {
-  &:focus {
-    border: 1px solid red;
   }
 }

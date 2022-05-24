@@ -1,12 +1,16 @@
 body {
   background: $color4;
-  // background-size: 100% 100%;
   background-position: top center;
   @include ff1;
   @include font($f16, $lh22, 400, $color1);
 }
 
 .page {
+  &__inner {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+  }
   &__global {
     max-width: 75rem;
     width: 100%;
@@ -27,6 +31,19 @@ body {
   &__text {
     font-size: 1.4rem;
     line-height: 1.8rem;
+  }
+  &__link {
+    // display: block;
+    padding: 0.5rem 0;
+    font-size: 1.6rem;
+    color: $color1;
+    text-decoration: underline;
+
+    transition: color .3s;
+
+    &:hover {
+      color: $color2;
+    }
   }
 }
 
@@ -62,13 +79,7 @@ a {
   }
 }
 
-.columns {
-  &__inner {
-    position: relative;
-    display: flex;
-    gap: 2rem;
-  }
-}
+
 
 .breadcrumb {
   padding: 0 0 1rem;
