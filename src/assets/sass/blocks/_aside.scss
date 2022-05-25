@@ -1,5 +1,5 @@
 .aside {
-  width: 25rem;
+  width: 25%;
   text-align: center;
 
   &__menu {
@@ -16,6 +16,9 @@
       font-weight: 400;
       margin-bottom: 1rem;
 
+      a{
+      color: $color4;
+      }
     }
 
     &-item {
