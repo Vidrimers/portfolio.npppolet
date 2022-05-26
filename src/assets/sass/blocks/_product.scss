@@ -7,10 +7,18 @@
 
     &-item {
       transition: all .3s ease;
-
       &:hover {
         transform: scale(1.5);
       }
+      &--subway,&--wc {
+        height: 38rem;
+        & img {
+          height: 100%;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+    }
     }
 
     &-img {

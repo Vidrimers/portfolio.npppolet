@@ -26,31 +26,49 @@ title: Анкета кандидата
         Пожалуйста, используйте только проверенные данные.
       </p>
       <p class="vacancy-resume__form-warning page__text">
-        Поля, помеченные <span class="required">красной линией</span>, являются обязательными для заполнения.
+        Поля, помеченные <span class="required">*</span>, являются обязательными для заполнения.
       </p>
       <form class="vacancy-resume__form" method="get">
-        <input class="vacancy-resume__form-item  required" type="text" required placeholder="Интересующая вакансия">
-        <input class="vacancy-resume__form-item required" type="text" required placeholder="ФИО">
-        <input class="vacancy-resume__form-item required" type="text" required placeholder="Дата рождения">
-        <input class="vacancy-resume__form-item required" type="text" required placeholder="Гражданство">
-        <input class="vacancy-resume__form-item required" type="text" required placeholder="Место жительства">
-        <input class="vacancy-resume__form-item required" type="tel" required placeholder="Телефон">
+        <div class="required__wrapper">
+          <input class="vacancy-resume__form-item  required" type="text" required placeholder="Интересующая вакансия">
+        </div>
+        <div class="required__wrapper">
+          <input class="vacancy-resume__form-item required" type="text" required placeholder="ФИО">
+        </div>
+        <div class="required__wrapper">
+          <input class="vacancy-resume__form-item required" type="text" required placeholder="Дата рождения">
+        </div>
+        <div class="required__wrapper">
+          <input class="vacancy-resume__form-item required" type="text" required placeholder="Гражданство">
+        </div>
+        <div class="required__wrapper">
+          <input class="vacancy-resume__form-item required" type="text" required placeholder="Место жительства">
+        </div>
+        <div class="required__wrapper">
+          <input class="vacancy-resume__form-item required" type="tel" required placeholder="Телефон">
+        </div>
         <input class="vacancy-resume__form-item" type="email" placeholder="E-mail">
         <p class="page__text">Образование</p>
         <div class="vacancy-resume__form-info">
           <div class="vacancy-resume__form-block">
             <p class="page__text">Начало обучения</p>
-            <input class="required" type="text" required>
+            <div class="required__wrapper">
+              <input class="required" type="text" required>
+            </div>
             <input type="text">
           </div>
           <div class="vacancy-resume__form-block">
             <p class="page__text">Окончание обучения</p>
-            <input class="required" type="text required" required>
+            <div class="required__wrapper">
+              <input class="required" type="text" required>
+            </div>
             <input type="text">
           </div>
           <div class="vacancy-resume__form-block">
             <p class="page__text">Название учебного заведения</p>
-            <input class="required" type="text required" required>
+            <div class="required__wrapper">
+              <input class="required" type="text" required>
+            </div>
             <input type="text">
           </div>
           <div class="vacancy-resume__form-block">

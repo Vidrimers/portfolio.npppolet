@@ -6,8 +6,6 @@
     max-width: 26rem;
   }
 
-  &__inner {}
-
   &__main {
     display: flex;
     align-items: flex-end;
@@ -34,6 +32,9 @@
     color: $color2;
     font-size: 2.2rem;
     font-weight: 700;
+    #author{
+      color: $color2 !important;
+    }
 
     span {
       text-transform: none;
@@ -121,7 +122,6 @@
       }
     }
   }
-
 
 
   &__sublist {

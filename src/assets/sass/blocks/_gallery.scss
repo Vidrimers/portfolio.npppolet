@@ -1,20 +1,14 @@
-.manufacture {
+.image,.manufacture,.projects,.product {
   &__gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-
-    &.part3,
-    &.part5,
-    &.part6 {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
     &-item {
       transition: all .3s ease;
 
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
 
@@ -32,6 +26,4 @@
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, .2);
     border-radius: 1rem;
   }
-
-  
 }
