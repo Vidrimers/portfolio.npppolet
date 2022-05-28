@@ -4,6 +4,19 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 
+    &-part4{
+      grid-template-columns: repeat(3, 1fr);
+      img{
+        width: 100%;
+        transition: all .3s ease;
+        // object-fit: cover;
+
+        &:hover{
+          // transform: scale(1.2);
+        }
+      }
+    }
+
     &-item {
       transition: all .3s ease;
 

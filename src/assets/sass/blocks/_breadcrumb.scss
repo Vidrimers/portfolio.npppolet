@@ -1,0 +1,28 @@
+.breadcrumb {
+  padding: 0 0 1rem;
+  color: rgba(37, 37, 37, .7);
+  line-height: 2rem;
+
+  &__item {
+    display: inline;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    &+&::before {
+      content: '/\00a0';
+      padding-left: 0.5rem;
+    }
+  }
+
+  &__link {
+    color: rgba(37, 37, 37, .7);
+    transition: all .3s;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+      padding-bottom: 0.5rem;
+      color: rgba(37, 37, 37, .9);
+    }
+  }
+}
