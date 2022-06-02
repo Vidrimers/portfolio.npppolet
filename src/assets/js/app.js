@@ -11,4 +11,5 @@ $(function () {
   //= components/nav.js
   //= components/slick.js
   //= components/news.js
+  //= components/map.js
 })

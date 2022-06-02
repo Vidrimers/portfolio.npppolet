@@ -45,7 +45,10 @@ title: Контакты
       <p class="page__text map__link">
         <a class="vacancy__link " target="_blank" href="https://yandex.ru/maps/-/CCUJU6ViCD">Смотреть схему проезда на Яндекс.Картах</a>
       </p>
-      <iframe id="map" class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A882cf6a2092cad38f65f55bbce0832c078b5b66acc404ce60cc579c0ddc2a81c&amp;source=constructor" frameborder="0"></iframe>
+      <div id="wrapMap">
+        <iframe id="map" class="map" style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A882cf6a2092cad38f65f55bbce0832c078b5b66acc404ce60cc579c0ddc2a81c&amp;source=constructor" frameborder="0"></iframe>
+        <div class="mapTitle"></div>
+      </div>
 
     </div>
 
