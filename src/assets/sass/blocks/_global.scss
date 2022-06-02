@@ -4,7 +4,31 @@ body {
   @include ff1;
   @include font($f16, $lh22, 400, $color1);
 }
+.mobile{
+  &__logo-link{
+    display: none;
+  }
+  &__logo {
+      max-width: 26rem;
+  }
+  &__title {
+    display: none;
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 59rem;
+    text-transform: uppercase;
+    color: $color2;
+    font-size: 2.4rem;
+    font-weight: 700;
 
+    span {
+      text-transform: none;
+      color: $color2;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+}
 .page {
   &__inner {
     position: relative;
