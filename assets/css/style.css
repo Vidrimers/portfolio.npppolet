@@ -111,6 +111,10 @@ body {
     color: #252525;
 }
 
+#lightbox {
+    position: fixed;
+}
+
 .mobile__logo-link {
     display: none;
 }
@@ -926,7 +930,7 @@ input.required {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -1002,6 +1006,33 @@ input.required {
 
 .news__block-link {
     font-size: 1.4rem;
+}
+
+#wrapMap {
+    position: relative;
+    cursor: help;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    -o-border-image: initial;
+    border-image: initial;
+}
+
+#wrapMap .mapTitle {
+    position: absolute;
+    z-index: 1000;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+    display: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    -o-border-image: initial;
+    border-image: initial;
 }
 
 .contacts-feedback__link {
@@ -1412,6 +1443,24 @@ input.required {
     .aside {
         display: none;
     }
+
+    .news__card-link:hover {
+        color: inherit;
+        background: none;
+    }
+
+    .news__card-link:hover .news__subtitle {
+        color: #005DAB;
+    }
+
+    .footer__list-item {
+        padding: 1rem;
+    }
+
+    .footer__list-link:hover {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1660,6 +1709,31 @@ input.required {
     }
 
     .main__preview {
+        text-align: center;
+    }
+
+    .footer__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer__list-item {
+        padding: 1rem;
+    }
+
+    .footer__list-link {
+        font-size: 1.6rem;
+    }
+
+    .footer__list-link:hover {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .footer__info {
         text-align: center;
     }
 }
