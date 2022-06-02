@@ -18,9 +18,25 @@ main__preview.slick({
   // variableWidth: false,
   responsive: [
     { 
-        breakpoint: 768,
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+      }
+    },
+    { 
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      { 
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
         }

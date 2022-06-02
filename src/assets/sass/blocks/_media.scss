@@ -1,5 +1,47 @@
 // 1170(slg) 992(lg) 768(md) 576(sm) 480(ssm) 320(xs)
 
+@include mq(_992) {
+  //992(lg)
+  .page__inner {
+    display: block;
+  }
+  .header {
+
+    &__main {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .main {
+    &__top {
+      gap: 1rem;
+    }
+    
+  }
+  .menu{
+
+    &__list {
+
+      &-item {
+
+        &:active{
+
+        }
+      }
+    }
+  }
+  .aside {
+    display: none;
+  }
+  .hero{
+    &__menu-mobile {
+      display: block;
+    }
+  }
+}
+
 @include mq(_768) {
   //768(md)
 
@@ -104,7 +146,7 @@
     &-list {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       height: 100vh;
       position: fixed;
@@ -113,7 +155,7 @@
       top: 0;
       left: 0;
       right: 0;
-    padding-bottom: 2rem;
+      padding: 2rem 1rem;
 
       background-color: #ffffff;
       transform: translatex(80rem);
@@ -127,10 +169,14 @@
       &-link {
         display: block;
 
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    padding: 2rem 0;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding: 2rem 0;
       }
+    }
+    .header__logo-link{
+      display: block;
+      margin: 0 auto;
     }
   }
 
@@ -148,30 +194,12 @@
 @include mq(_576) {
   // 576(sm)
 
-  .hero {
-    &__photo {
-      background-size: 300%;
-    }
+  .main{
 
-    &__title {
-      font-size: 3rem;
-      line-height: 3.4rem;
+    &__preview{
+      text-align: center;
     }
   }
-
-  .skills {
-
-    &__items {
-
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10rem;
-    }
-
-    &__item {}
-  }
-
 }
 
 
@@ -180,15 +208,18 @@
   // 480(ssm)
 
   .hero {
-    &__top{
+    &__top {
       display: block;
     }
-    &__title{
+
+    &__title {
       margin-bottom: 1rem;
     }
+
     &__text {
       text-align: left;
     }
+
     &__photo {
       background-size: 400%;
     }

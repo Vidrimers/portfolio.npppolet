@@ -10,4 +10,5 @@ console.log("created by Shiryakov Yaroslav");
 $(function () {
   //= components/nav.js
   //= components/slick.js
+  //= components/news.js
 })

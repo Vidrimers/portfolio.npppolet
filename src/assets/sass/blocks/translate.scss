@@ -1,0 +1,17 @@
+.translate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 5rem;
+  height: 100vh;
+&__text {
+  font-size: 3rem;
+  color: $color2;
+  margin-bottom: 2rem;
+  }
+  .footer{
+    // margin-top: auto;
+  }
+}
